@@ -2,7 +2,7 @@ import json
 
 filename = input("Please enter file name: ")
 
-with open(f"Lab06{filename}.json", "r") as file:
+with open(f"Lab06.{filename}.json", "r") as file:
 	data_text = file.read()
 	data_json = json.loads(data_text)
 	data = data_json["array"]
